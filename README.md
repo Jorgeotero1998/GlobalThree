@@ -2,7 +2,7 @@
 
 Visualización 3D interactiva de datos demográficos globales, construida con **React Three Fiber**. Un globo terráqueo navegable muestra los países más poblados del mundo como nodos pulsantes, conectados por arcos animados que simulan flujos de datos en tiempo real.
 
-**[▶ Ver demo en vivo](#)** _(reemplazar con la URL de Vercel una vez desplegado)_
+**[▶ Ver demo en vivo](#)** https://global-three-one.vercel.app/
 
 ![Stack](https://img.shields.io/badge/React-19-61DAFB?logo=react&logoColor=000)
 ![Stack](https://img.shields.io/badge/Three.js-R3F-000000?logo=three.js)
