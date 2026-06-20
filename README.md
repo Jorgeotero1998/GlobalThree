@@ -9,7 +9,7 @@ Interactive 3D visualization of global demographic data, built with **React Thre
 
 **[▶ View Live Demo](#)**
 
-https://global-three-one.vercel.app/
+https://global-three-9nl71p2hi-jorge-oteros-projects-8c2c437e.vercel.app/
 
 
 
