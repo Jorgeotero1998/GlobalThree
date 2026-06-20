@@ -1,6 +1,8 @@
 # 🌐 Globe Pulse
 
 Interactive 3D visualization of global demographic data, built with **React Three Fiber**. A navigable globe displays the world's most populated countries as pulsating nodes, connected by animated arcs that simulate real-time data flows.
+
+
 ![Stack](https://img.shields.io/badge/React-19-61DAFB?logo=react&logoColor=000)
 ![Stack](https://img.shields.io/badge/Three.js-R3F-000000?logo=three.js)
 ![Stack](https://img.shields.io/badge/Vite-8-646CFF?logo=vite&logoColor=fff)
