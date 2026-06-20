@@ -1,0 +1,407 @@
+[
+  {
+    "name": "China",
+    "capital": "Beijing",
+    "lat": 35,
+    "lng": 105,
+    "population": 1392730000,
+    "region": "Asia",
+    "code": "CN"
+  },
+  {
+    "name": "India",
+    "capital": "New Delhi",
+    "lat": 20,
+    "lng": 77,
+    "population": 1352617328,
+    "region": "Asia",
+    "code": "IN"
+  },
+  {
+    "name": "United States",
+    "capital": "Washington D.C.",
+    "lat": 38,
+    "lng": -97,
+    "population": 326687501,
+    "region": "Americas",
+    "code": "US"
+  },
+  {
+    "name": "Indonesia",
+    "capital": "Jakarta",
+    "lat": -5,
+    "lng": 120,
+    "population": 267663435,
+    "region": "Asia",
+    "code": "ID"
+  },
+  {
+    "name": "Pakistan",
+    "capital": "Islamabad",
+    "lat": 30,
+    "lng": 70,
+    "population": 212215030,
+    "region": "Asia",
+    "code": "PK"
+  },
+  {
+    "name": "Brazil",
+    "capital": "Brasília",
+    "lat": -10,
+    "lng": -55,
+    "population": 209469333,
+    "region": "Americas",
+    "code": "BR"
+  },
+  {
+    "name": "Nigeria",
+    "capital": "Abuja",
+    "lat": 10,
+    "lng": 8,
+    "population": 195874740,
+    "region": "Africa",
+    "code": "NG"
+  },
+  {
+    "name": "Bangladesh",
+    "capital": "Dhaka",
+    "lat": 24,
+    "lng": 90,
+    "population": 161356039,
+    "region": "Asia",
+    "code": "BD"
+  },
+  {
+    "name": "Russia",
+    "capital": "Moscow",
+    "lat": 60,
+    "lng": 100,
+    "population": 144478050,
+    "region": "Europe",
+    "code": "RU"
+  },
+  {
+    "name": "Japan",
+    "capital": "Tokyo",
+    "lat": 36,
+    "lng": 138,
+    "population": 126529100,
+    "region": "Asia",
+    "code": "JP"
+  },
+  {
+    "name": "Mexico",
+    "capital": "Mexico City",
+    "lat": 23,
+    "lng": -102,
+    "population": 126190788,
+    "region": "Americas",
+    "code": "MX"
+  },
+  {
+    "name": "Ethiopia",
+    "capital": "Addis Ababa",
+    "lat": 8,
+    "lng": 38,
+    "population": 109224559,
+    "region": "Africa",
+    "code": "ET"
+  },
+  {
+    "name": "Philippines",
+    "capital": "Manila",
+    "lat": 13,
+    "lng": 122,
+    "population": 106651922,
+    "region": "Asia",
+    "code": "PH"
+  },
+  {
+    "name": "Egypt",
+    "capital": "Cairo",
+    "lat": 27,
+    "lng": 30,
+    "population": 98423595,
+    "region": "Africa",
+    "code": "EG"
+  },
+  {
+    "name": "Vietnam",
+    "capital": "Hanoi",
+    "lat": 16.16666666,
+    "lng": 107.83333333,
+    "population": 95540395,
+    "region": "Asia",
+    "code": "VN"
+  },
+  {
+    "name": "Germany",
+    "capital": "Berlin",
+    "lat": 51,
+    "lng": 9,
+    "population": 82905782,
+    "region": "Europe",
+    "code": "DE"
+  },
+  {
+    "name": "Iran",
+    "capital": "Tehran",
+    "lat": 32,
+    "lng": 53,
+    "population": 81800269,
+    "region": "Asia",
+    "code": "IR"
+  },
+  {
+    "name": "Thailand",
+    "capital": "Bangkok",
+    "lat": 15,
+    "lng": 100,
+    "population": 69428524,
+    "region": "Asia",
+    "code": "TH"
+  },
+  {
+    "name": "France",
+    "capital": "Paris",
+    "lat": 46,
+    "lng": 2,
+    "population": 66977107,
+    "region": "Europe",
+    "code": "FR"
+  },
+  {
+    "name": "United Kingdom",
+    "capital": "London",
+    "lat": 54,
+    "lng": -2,
+    "population": 66460344,
+    "region": "Europe",
+    "code": "GB"
+  },
+  {
+    "name": "Italy",
+    "capital": "Rome",
+    "lat": 42.83333333,
+    "lng": 12.83333333,
+    "population": 60421760,
+    "region": "Europe",
+    "code": "IT"
+  },
+  {
+    "name": "South Africa",
+    "capital": "Pretoria",
+    "lat": -29,
+    "lng": 24,
+    "population": 57779622,
+    "region": "Africa",
+    "code": "ZA"
+  },
+  {
+    "name": "Tanzania",
+    "capital": "Dodoma",
+    "lat": -6,
+    "lng": 35,
+    "population": 56318348,
+    "region": "Africa",
+    "code": "TZ"
+  },
+  {
+    "name": "Myanmar",
+    "capital": "Naypyidaw",
+    "lat": 22,
+    "lng": 98,
+    "population": 53708395,
+    "region": "Asia",
+    "code": "MM"
+  },
+  {
+    "name": "South Korea",
+    "capital": "Seoul",
+    "lat": 37,
+    "lng": 127.5,
+    "population": 51606633,
+    "region": "Asia",
+    "code": "KR"
+  },
+  {
+    "name": "Kenya",
+    "capital": "Nairobi",
+    "lat": 1,
+    "lng": 38,
+    "population": 51393010,
+    "region": "Africa",
+    "code": "KE"
+  },
+  {
+    "name": "Colombia",
+    "capital": "Bogotá",
+    "lat": 4,
+    "lng": -72,
+    "population": 49648685,
+    "region": "Americas",
+    "code": "CO"
+  },
+  {
+    "name": "Spain",
+    "capital": "Madrid",
+    "lat": 40,
+    "lng": -4,
+    "population": 46796540,
+    "region": "Europe",
+    "code": "ES"
+  },
+  {
+    "name": "Ukraine",
+    "capital": "Kyiv",
+    "lat": 49,
+    "lng": 32,
+    "population": 44622516,
+    "region": "Europe",
+    "code": "UA"
+  },
+  {
+    "name": "Argentina",
+    "capital": "Buenos Aires",
+    "lat": -34,
+    "lng": -64,
+    "population": 44494502,
+    "region": "Americas",
+    "code": "AR"
+  },
+  {
+    "name": "Uganda",
+    "capital": "Kampala",
+    "lat": 1,
+    "lng": 32,
+    "population": 42723139,
+    "region": "Africa",
+    "code": "UG"
+  },
+  {
+    "name": "Algeria",
+    "capital": "Algiers",
+    "lat": 28,
+    "lng": 3,
+    "population": 42228429,
+    "region": "Africa",
+    "code": "DZ"
+  },
+  {
+    "name": "Sudan",
+    "capital": "Khartoum",
+    "lat": 15,
+    "lng": 30,
+    "population": 41801533,
+    "region": "Africa",
+    "code": "SD"
+  },
+  {
+    "name": "Iraq",
+    "capital": "Baghdad",
+    "lat": 33,
+    "lng": 44,
+    "population": 38433600,
+    "region": "Asia",
+    "code": "IQ"
+  },
+  {
+    "name": "Poland",
+    "capital": "Warsaw",
+    "lat": 52,
+    "lng": 20,
+    "population": 37974750,
+    "region": "Europe",
+    "code": "PL"
+  },
+  {
+    "name": "Afghanistan",
+    "capital": "Kabul",
+    "lat": 33,
+    "lng": 65,
+    "population": 37172386,
+    "region": "Asia",
+    "code": "AF"
+  },
+  {
+    "name": "Canada",
+    "capital": "Ottawa",
+    "lat": 60,
+    "lng": -95,
+    "population": 37057765,
+    "region": "Americas",
+    "code": "CA"
+  },
+  {
+    "name": "Morocco",
+    "capital": "Rabat",
+    "lat": 32,
+    "lng": -5,
+    "population": 36029138,
+    "region": "Africa",
+    "code": "MA"
+  },
+  {
+    "name": "Saudi Arabia",
+    "capital": "Riyadh",
+    "lat": 25,
+    "lng": 45,
+    "population": 33699947,
+    "region": "Asia",
+    "code": "SA"
+  },
+  {
+    "name": "Uzbekistan",
+    "capital": "Tashkent",
+    "lat": 41,
+    "lng": 64,
+    "population": 32955400,
+    "region": "Asia",
+    "code": "UZ"
+  },
+  {
+    "name": "Peru",
+    "capital": "Lima",
+    "lat": -10,
+    "lng": -76,
+    "population": 31989256,
+    "region": "Americas",
+    "code": "PE"
+  },
+  {
+    "name": "Malaysia",
+    "capital": "Kuala Lumpur",
+    "lat": 2.5,
+    "lng": 112.5,
+    "population": 31528585,
+    "region": "Asia",
+    "code": "MY"
+  },
+  {
+    "name": "Angola",
+    "capital": "Luanda",
+    "lat": -12.5,
+    "lng": 18.5,
+    "population": 30809762,
+    "region": "Africa",
+    "code": "AO"
+  },
+  {
+    "name": "Ghana",
+    "capital": "Accra",
+    "lat": 8,
+    "lng": -2,
+    "population": 29767108,
+    "region": "Africa",
+    "code": "GH"
+  },
+  {
+    "name": "Mozambique",
+    "capital": "Maputo",
+    "lat": -18.25,
+    "lng": 35,
+    "population": 29495962,
+    "region": "Africa",
+    "code": "MZ"
+  }
+]
