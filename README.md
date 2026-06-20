@@ -1,8 +1,8 @@
 # 🌐 Globe Pulse
 
-Visualización 3D interactiva de datos demográficos globales, construida con **React Three Fiber**. Un globo terráqueo navegable muestra los países más poblados del mundo como nodos pulsantes, conectados por arcos animados que simulan flujos de datos en tiempo real.
+Interactive 3D visualization of global demographic data, built with **React Three Fiber**. A navigable globe displays the world's most populated countries as pulsating nodes, connected by animated arcs that simulate real-time data flows.
 
-**[▶ Ver demo en vivo](#)** 
+**[▶ View Live Demo](#)**
 
 https://global-three-one.vercel.app/
 
@@ -12,83 +12,85 @@ https://global-three-one.vercel.app/
 
 ## ✨ Features
 
-- **Globo 3D con textura realista** — mapa satelital de la Tierra (día), relieve, brillo especular en océanos, luces nocturnas de ciudades y capa de nubes
-- **Rotación automática** + control orbital manual (drag + scroll)
-- **45 nodos de datos reales** — los países más poblados del mundo, con capital, población y coordenadas
-- **Arcos de flujo animados** — pulsos viajando entre nodos, coloreados por región/continente
-- **Panel de detalle (HUD)** — click en cualquier nodo para ver su ficha completa
-- **Diseño responsive** — de desktop a mobile, con tipografía y layout adaptados
-- **100% client-side** — sin backend, sin API keys, datos y texturas bakeados en build time
+- **3D Globe with Realistic Texture** — satellite map of Earth (daytime), relief, specular highlights on oceans, city lights at night, and cloud layer
+- **Automatic Rotation** + manual orbital control (drag + scroll)
+- **45 Real-world data nodes** — the world's most populated countries, with capital, population, and coordinates
+- **Animated flow arcs** — pulses traveling between nodes, colored by region/continent
+- **Detail panel (HUD)** — click on any node to see its full details
+- **Responsive design** — from desktop to mobile, with adapted typography and layout
+- **100% client-side** — no backend, no API keys, data and textures baked at build time
 
-## 🛠️ Stack técnico
+## 🛠️ Technical Stack
 
-| Capa | Tecnología |
-|---|---|
-| Render 3D | [Three.js](https://threejs.org/) vía [@react-three/fiber](https://docs.pmnd.rs/react-three-fiber) + [@react-three/drei](https://github.com/pmndrs/drei) |
-| UI / animaciones | React 19 + [Framer Motion](https://www.framer.com/motion/) |
+| Layer | Technology |
+
+---|---|
+
+
+3D Rendering | [Three.js](https://threejs.org/) via [@react-three/fiber](https://docs.pmnd.rs/react-three-fiber) + [@react-three/drei](https://github.com/pmndrs/drei) |
+
+| UI / Animations | React 19 + [Framer Motion](https://www.framer.com/motion/) |
+
 | Build | Vite |
-| Tipografía | Space Grotesk · Inter · JetBrains Mono (self-hosted vía `@fontsource`) |
 
-## 📊 Sobre los datos
+| Typography | Space Grotesk · Inter · JetBrains Mono (self-hosted via `@fontsource`) |
 
-Los datos de países (capital, población, coordenadas) provienen de fuentes públicas open-source ([REST Countries](https://restcountries.com/) / [mledoze/countries](https://github.com/mledoze/countries)) y fueron procesados y bakeados como JSON estático en `src/data/countries.json` para evitar llamadas a APIs externas en runtime. Las cifras de población son aproximadas y con fines ilustrativos.
+## 📊 About the Data
 
-Las texturas del globo (mapa de día, relieve, especular, luces nocturnas y nubes) provienen de [PlanetPixelEmporium](https://planetpixelemporium.com/earth.html) y están incluidas localmente en `public/textures/` para que el proyecto no dependa de ninguna API externa en producción.
+Country data (capital, population, coordinates) comes from open-source public sources ([REST Countries](https://restcountries.com/) / [mledoze/countries](https://github.com/mledoze/countries)) and was processed and baked as static JSON in `src/data/countries.json` to avoid external API calls at runtime. Population figures are approximate and for illustrative purposes.
 
-## 🚀 Correr el proyecto localmente
+
+The globe textures (daytime map, bump map, specular map, nighttime lights, and clouds) come from PlanetPixelEmporium and are included locally in `public/textures/` so the project doesn't depend on any external APIs in production.
+
+## 🚀 Run the project locally
 
 ```bash
-# Clonar el repo
+# Clone the repo
 git clone https://github.com/Jorgeotero1998/globe-pulse.git
 cd globe-pulse
 
-# Instalar dependencias
+# Install dependencies
 npm install
 
-# Levantar servidor de desarrollo
+# Start the development server
 npm run dev
 ```
 
-Abrí `http://localhost:5173` en el navegador.
+Open `http://localhost:5173` in your browser.
 
-### Otros comandos
+### Other Commands
 
 ```bash
-npm run build      # build de producción en /dist
-npm run preview    # previsualizar el build de producción
-npm run lint        # correr ESLint
+`npm run build` # Production build in /dist
+`npm run preview` # Preview the production build
+`npm run lint` # Run ESLint
 ```
 
-## 📁 Estructura del proyecto
+## 📁 Project Structure
 
 ```
-public/
-└── textures/              # Texturas del globo (día, relieve, especular, luces, nubes)
-src/
-├── components/
-│   ├── GlobeScene.jsx    # Canvas principal de R3F, cámara y luces
-│   ├── GlobeSphere.jsx   # Esfera del globo con texturas reales + overlay técnico
-│   ├── CityPoints.jsx    # Nodos pulsantes por país
-│   ├── DataArcs.jsx      # Arcos animados entre nodos
-│   ├── InfoPanel.jsx     # Panel HUD de detalle al seleccionar un país
-│   └── Header.jsx        # Header con título y métricas en vivo
+`public/
+``` textures/` # Globe textures (day, bump, specular, lights, clouds)
+` ... Nodes
+│ ├── InfoPanel.jsx # Detailed HUD panel when a country is selected
+│ └── Header.jsx # Header with title and live metrics
 ├── data/
-│   └── countries.json    # Dataset estático de países
+│ └── countries.json # Static dataset of countries
 ├── utils/
-│   └── geo.js             # Conversión lat/lng → 3D, generación de arcos, helpers
+│ └── geo.js # Lat/lng conversion → 3D, arc generation, helpers
 ├── App.jsx
 ├── main.jsx
-└── index.css              # Sistema de diseño (tokens, layout, responsive)
+└── index.css # Design system (tokens, layout, responsive)
 ```
 
 ## 🌍 Deploy
 
-Este proyecto está listo para desplegarse en [Vercel](https://vercel.com) con cero configuración adicional: detecta automáticamente que es un proyecto Vite y aplica el build correcto.
+This project is ready to be deployed on [Vercel](https://vercel.com) with zero additional configuration: automatically detects that it's a Vite project and applies the correct build.
 
-## 📄 Licencia
+## 📄 License
 
-MIT — ver [LICENSE](./LICENSE)
+MIT — see [LICENSE](./LICENSE)
 
 ---
 
-Construido por [Jorge Otero](https://github.com/Jorgeotero1998) como proyecto de portfolio.
+Built by [Jorge Otero](https://github.com/Jorgeotero1998) as a portfolio project.
