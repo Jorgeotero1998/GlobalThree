@@ -1,11 +1,9 @@
 import { useRef, useMemo, useState } from 'react';
 import { useFrame } from '@react-three/fiber';
-import * as THREE from 'three';
 import { latLngToVector3, REGION_COLORS } from '../utils/geo';
 import { GLOBE_RADIUS } from './GlobeSphere';
 
 function CityPoint({ country, onSelect, isSelected }) {
-  const meshRef = useRef();
   const haloRef = useRef();
   const [hovered, setHovered] = useState(false);
 
@@ -19,15 +17,17 @@ function CityPoint({ country, onSelect, isSelected }) {
   // Escala del punto según población (raíz para no saturar el rango visual)
   const baseScale = useMemo(() => {
     const norm = Math.sqrt(country.population) / Math.sqrt(1_400_000_000);
-    return 0.022 + norm * 0.045;
+    return 0.028 + norm * 0.05;
   }, [country.population]);
+
+  const pulseGroupRef = useRef();
 
   useFrame(({ clock }) => {
     const t = clock.getElapsedTime();
     const pulse = 1 + Math.sin(t * 2.2 + country.lat) * 0.18;
-    if (meshRef.current) {
+    if (pulseGroupRef.current) {
       const targetScale = (hovered || isSelected ? baseScale * 1.6 : baseScale) * pulse;
-      meshRef.current.scale.setScalar(targetScale);
+      pulseGroupRef.current.scale.setScalar(targetScale);
     }
     if (haloRef.current) {
       const haloPulse = 1 + Math.sin(t * 2.2 + country.lat) * 0.4;
@@ -58,10 +58,12 @@ function CityPoint({ country, onSelect, isSelected }) {
         <meshBasicMaterial transparent opacity={0} depthWrite={false} />
       </mesh>
 
-      <mesh ref={meshRef}>
-        <sphereGeometry args={[1, 16, 16]} />
-        <meshBasicMaterial color={isSelected ? '#FF6B4A' : color} />
-      </mesh>
+      <group ref={pulseGroupRef}>
+        <mesh>
+          <sphereGeometry args={[1, 16, 16]} />
+          <meshBasicMaterial color={isSelected ? '#FF6B4A' : color} toneMapped={false} />
+        </mesh>
+      </group>
       <mesh ref={haloRef}>
         <sphereGeometry args={[1, 16, 16]} />
         <meshBasicMaterial
@@ -69,6 +71,7 @@ function CityPoint({ country, onSelect, isSelected }) {
           transparent
           opacity={0.2}
           depthWrite={false}
+          toneMapped={false}
         />
       </mesh>
     </group>
