@@ -6,6 +6,13 @@ Interactive 3D visualization of global demographic data, built with **React Thre
 
 https://global-three-one.vercel.app/
 
+
+
+https://github.com/user-attachments/assets/5ad4aa2c-fbcc-4c4e-8f31-82ec42fcf6a4
+
+
+
+
 ![Stack](https://img.shields.io/badge/React-19-61DAFB?logo=react&logoColor=000)
 ![Stack](https://img.shields.io/badge/Three.js-R3F-000000?logo=three.js)
 ![Stack](https://img.shields.io/badge/Vite-8-646CFF?logo=vite&logoColor=fff)
