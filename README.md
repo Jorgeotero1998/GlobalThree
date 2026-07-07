@@ -9,14 +9,13 @@ Interactive 3D visualization of global demographic data, built with **React Thre
 
 **[▶ View Live Demo](https://global-three-one.vercel.app/)**
 
-https://global-three-one.vercel.app/
-
-
-
-https://github.com/user-attachments/assets/5ad4aa2c-fbcc-4c4e-8f31-82ec42fcf6a4
-
-
-
+<p align="center">
+  <a href="https://global-three-one.vercel.app/">
+    <img src="docs/screenshot.png" width="820" alt="Globe Pulse — live 3D globe with animated data-flow arcs"/>
+  </a>
+  <br/>
+  <sub><i>Live app — navigable 3D globe with pulsating population nodes and animated flow arcs.</i></sub>
+</p>
 
 ## ✨ Features
 
@@ -31,16 +30,10 @@ https://github.com/user-attachments/assets/5ad4aa2c-fbcc-4c4e-8f31-82ec42fcf6a4
 ## 🛠️ Technical Stack
 
 | Layer | Technology |
-
----|---|
-
-
-3D Rendering | [Three.js](https://threejs.org/) via [@react-three/fiber](https://docs.pmnd.rs/react-three-fiber) + [@react-three/drei](https://github.com/pmndrs/drei) |
-
+|---|---|
+| 3D Rendering | [Three.js](https://threejs.org/) via [@react-three/fiber](https://docs.pmnd.rs/react-three-fiber) + [@react-three/drei](https://github.com/pmndrs/drei) |
 | UI / Animations | React 19 + [Framer Motion](https://www.framer.com/motion/) |
-
 | Build | Vite |
-
 | Typography | Space Grotesk · Inter · JetBrains Mono (self-hosted via `@fontsource`) |
 
 ## 📊 About the Data
@@ -54,8 +47,8 @@ The globe textures (daytime map, bump map, specular map, nighttime lights, and c
 
 ```bash
 # Clone the repo
-git clone https://github.com/Jorgeotero1998/globe-pulse.git
-cd globe-pulse
+git clone https://github.com/Jorgeotero1998/GlobalThree.git
+cd GlobalThree
 
 # Install dependencies
 npm install
@@ -69,26 +62,27 @@ Open `http://localhost:5173` in your browser.
 ### Other Commands
 
 ```bash
-`npm run build` # Production build in /dist
-`npm run preview` # Preview the production build
-`npm run lint` # Run ESLint
+npm run build    # Production build in /dist
+npm run preview  # Preview the production build
+npm run lint     # Run ESLint
 ```
 
 ## 📁 Project Structure
 
 ```
-`public/
-``` textures/` # Globe textures (day, bump, specular, lights, clouds)
-` ... Nodes
-│ ├── InfoPanel.jsx # Detailed HUD panel when a country is selected
-│ └── Header.jsx # Header with title and live metrics
+public/
+└── textures/          # Globe textures (day, bump, specular, lights, clouds)
+src/
+├── components/        # Globe, Nodes, arcs, HUD
+│   ├── InfoPanel.jsx  # Detailed HUD panel when a country is selected
+│   └── Header.jsx     # Header with title and live metrics
 ├── data/
-│ └── countries.json # Static dataset of countries
+│   └── countries.json # Static dataset of countries
 ├── utils/
-│ └── geo.js # Lat/lng conversion → 3D, arc generation, helpers
+│   └── geo.js         # Lat/lng → 3D conversion, arc generation, helpers
 ├── App.jsx
 ├── main.jsx
-└── index.css # Design system (tokens, layout, responsive)
+└── index.css          # Design system (tokens, layout, responsive)
 ```
 
 ## 🌍 Deploy
