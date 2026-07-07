@@ -197,7 +197,23 @@ src/
 
 ## Deploy
 
-Configured for **[Vercel](https://vercel.com)** — `vercel.json` rewrites SPA routes while preserving `/api/*` serverless functions. Push to `main` auto-deploys to [global-three-one.vercel.app](https://global-three-one.vercel.app/).
+Configured for **[Vercel](https://vercel.com)** — project `global-three`, production domain `global-three-one.vercel.app`.
+
+| Setting | Value |
+|---------|-------|
+| Git repo | `Jorgeotero1998/GlobalThree` |
+| Branch | `main` |
+| Root directory | `.` |
+| Build command | `npm run build` |
+| Output directory | `dist` |
+
+Push to `main` should auto-deploy. If the live URL shows an old build after pushing, promote manually:
+
+```bash
+npx vercel link --project global-three --yes
+npx vercel deploy --prod --yes
+npx vercel alias set <deployment-url> global-three-one.vercel.app
+```
 
 ---
 
