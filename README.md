@@ -1,6 +1,6 @@
 # Global Pulse
 
-**An interactive geography encyclopedia on a premium 3D globe** — 249 countries, 54 fields each, animated data arcs, metric choropleth layers, tabbed detail panels, and a typed Vercel API. Built to make visitors ask *"how the hell did they build this?"* !!
+**An interactive geography encyclopedia on a premium 3D globe** — 249 countries, 54 fields each, animated data arcs, metric choropleth layers, tabbed detail panels, and a typed Vercel API.
 
 ![Stack](https://img.shields.io/badge/React-19-61DAFB?logo=react&logoColor=000)
 ![Stack](https://img.shields.io/badge/TypeScript-5.7-3178C6?logo=typescript&logoColor=fff)
