@@ -7,6 +7,7 @@
 ![Stack](https://img.shields.io/badge/Three.js-R3F-000000?logo=three.js)
 ![Stack](https://img.shields.io/badge/Vite-8-646CFF?logo=vite&logoColor=fff)
 ![Stack](https://img.shields.io/badge/Vitest-33_tests-6E9F18?logo=vitest&logoColor=fff)
+![CI](https://github.com/Jorgeotero1998/GlobalThree/actions/workflows/ci.yml/badge.svg)
 
 **[Live demo → global-three-one.vercel.app](https://global-three-one.vercel.app/)**
 
@@ -25,7 +26,7 @@
 Most "globe demos" stop at a textured sphere and a tooltip. **Global Pulse** is a full-stack geographic exploration platform:
 
 - **Thousands of bundled data points** (249 × 54 fields) — no API keys, works offline after first load
-- **Staff-level 3D craft** — custom Fresnel atmosphere, day/night shader, instanced markers, region flow arcs, compare arc
+- **Polished 3D craft** — custom Fresnel atmosphere, day/night shader, instanced markers, region flow arcs, compare arc
 - **Encyclopedia UX** — tabbed detail drawer (Overview · Geography · Demographics · Economy · Culture), search + filters, side-by-side compare, mini charts
 - **Real backend** — Vercel serverless API with pagination, filtering, OpenAPI-ready handlers, shared TypeScript types
 
